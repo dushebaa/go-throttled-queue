@@ -6,7 +6,7 @@ import (
 
 // Create a new throttled function
 //
-// Param: `interval` throttle lime interval
+// Param: `interval` throttle time interval
 //
 // Param: `maxRequests` maximum amount of requests per interval
 func NewThrottledQueue(interval time.Duration, maxRequests int) *ThrottledQueue {

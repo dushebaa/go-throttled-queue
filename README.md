@@ -32,7 +32,7 @@ func main() {
 		throttledQueue.Enqueue(throttledCallback, i)
 	}
 
-	// Wait untill are items are processed
+	// Wait until items are processed
 	throttledQueue.Wait()
 	fmt.Println("Done")
 }
