@@ -1,4 +1,4 @@
-package throttledqueue
+package ttq
 
 import (
 	"sync"
