@@ -15,7 +15,7 @@ package main
 
 import (
     "fmt"
-    "github.com/uselesss/throttled-queue"
+    "github.com/uselesss/go-throttled-queue"
 )
 
 func main() {
