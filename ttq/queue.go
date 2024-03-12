@@ -1,15 +1,15 @@
-package throttledqueue
+package ttq
 
 import (
 	"time"
 )
 
-// Create a new throttled function
+// Create a new throttled queue
 //
 // Param: `interval` throttle time interval
 //
 // Param: `maxRequests` maximum amount of requests per interval
-func NewThrottledQueue(interval time.Duration, maxRequests int) *ThrottledQueue {
+func New(interval time.Duration, maxRequests int) *ThrottledQueue {
 	return &ThrottledQueue{
 		interval:     interval,
 		maxRequests:  maxRequests,

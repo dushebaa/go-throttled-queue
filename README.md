@@ -14,18 +14,20 @@ go get github.com/uselesss/go-throttled-queue
 package main
 
 import (
-    "fmt"
-    "github.com/uselesss/go-throttled-queue"
+	"fmt"
+	"time"
+
+	"github.com/uselesss/go-throttled-queue/ttq"
 )
 
 func main() {
 	// Define a callback function
 	throttledCallback := func(params ...interface{}) {
-		fmt.Println("Triggered callback with id:", params[0])
+		fmt.Println("Executed callback with id:", params[0])
 	}
 
 	// Create a new throttled queue with a maximum of 5 calls/second
-	throttledQueue := NewThrottledQueue(time.Second, 5)
+	throttledQueue := ttq.New(time.Second, 5)
 
 	// Enqueue items
 	for i := 0; i < 20; i++ {
