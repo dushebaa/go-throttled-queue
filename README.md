@@ -1,6 +1,6 @@
 # go-throttled-queue
 
-[![coverage](https://camo.githubusercontent.com/b167c2e10fd87d7d2d8afc04fd0bad9c8dadce0986e43365d200863d193d94aa/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f6477796c2f686170692d617574682d6a7774322e7376673f6d61784167653d32353932303030)](./cover.html)
+[![coverage](https://camo.githubusercontent.com/b167c2e10fd87d7d2d8afc04fd0bad9c8dadce0986e43365d200863d193d94aa/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f6477796c2f686170692d617574682d6a7774322e7376673f6d61784167653d32353932303030)](https://dushebaa.github.io/go-throttled-queue/cover.html)
 
 This is a golang library for creating throttled queues. It allows you to control the rate at which items are processed. Unlike the `throttle`, each item is placed in a queue and emptied at the specified rate limit. May be useful for throttling API requests.  
 
