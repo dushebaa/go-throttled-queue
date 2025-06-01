@@ -1,0 +1,12 @@
+mode: set
+github.com/uselesss/go-throttled-queue/ttq/queue.go:12.67,19.2 1 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:26.78,28.35 1 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:28.35,31.3 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:31.8,34.23 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:34.23,37.4 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:42.33,44.2 1 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:47.36,52.52 4 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:52.52,55.3 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:56.2,58.22 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:58.22,61.3 2 1
+github.com/uselesss/go-throttled-queue/ttq/queue.go:61.8,63.3 1 1

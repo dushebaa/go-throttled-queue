@@ -27,7 +27,7 @@ func (q *ThrottledQueue) Enqueue(callback func(...interface{}), args ...any) {
 
 	if q.numRequests < q.maxRequests {
 		q.numRequests++
-		callback(args...)
+		go callback(args...)
 	} else {
 		q.queue = append(q.queue, FuctionWithParams{callback, args})
 
@@ -51,7 +51,7 @@ func (q *ThrottledQueue) dequeue() {
 
 	for _, function := range q.queue[0:q.maxRequests] {
 		q.numRequests++
-		function.Function(function.Params...)
+		go function.Function(function.Params...)
 	}
 	q.queue = q.queue[q.maxRequests:]
 
